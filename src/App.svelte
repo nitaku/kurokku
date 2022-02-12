@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte'
 
 	import Clock from './Clock.svelte'
+	import Calendar from './Calendar.svelte'
 
 	let now = new Date()
 	let tick = true
@@ -66,7 +67,8 @@
 		</symbol>
 	</defs>
 	
-	<Clock x="0" y="0" date={now} {tick}/>
+	<Clock x="0" y="-80" date={now} {tick} />
+	<Calendar x="0" y="180" date={now} />
 
 	<!--
 
@@ -116,7 +118,6 @@
 		</g>
 	</a>
 
-	<text id="calendar" class="tile" x="512" y="10" dy="1em"/>
 	<text id="season" class="tile" x="512" y="60" dy="1em"/>
 
 	<text id="dst" class="tile" x="670" y="240" dy=".35em"/>

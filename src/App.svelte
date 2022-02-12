@@ -4,11 +4,13 @@
 	import Clock from './Clock.svelte'
 
 	let now = new Date()
+	let tick = true
 
 	onMount(() => {
 		// update every half second
 		const interval = setInterval(() => {
 			now = new Date()
+			tick = !tick
 		}, 500)
 
 		return () => {
@@ -64,7 +66,7 @@
 		</symbol>
 	</defs>
 	
-	<Clock x="0" y="0" date={now}/>
+	<Clock x="0" y="0" date={now} {tick}/>
 
 	<!--
 

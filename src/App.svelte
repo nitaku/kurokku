@@ -4,6 +4,7 @@
 	import Clock from './Clock.svelte'
 	import Calendar from './Calendar.svelte'
 	import Season from './Season.svelte'
+	import DST from './DST.svelte'
 
 	let now = new Date()
 	let tick = true
@@ -69,8 +70,9 @@
 	</defs>
 	
 	<Clock x="0" y="-100" date={now} {tick} />
-	<Calendar x="0" y="200" date={now} />
-	<Season x="0" y="300" date={now} />
+	<Calendar x="0" y="160" date={now} />
+	<Season x="0" y="240" date={now} />
+	<DST x="-574" y="90" date={now} />
 
 	<!--
 

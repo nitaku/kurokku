@@ -14,7 +14,7 @@
         else if(d < seasons[3])
             return 'estate'
         else if(d < seasons[4])
-           return 'autunno'
+            return 'autunno'
         else
             return 'inverno'
     }
@@ -24,7 +24,7 @@
 
 <style>
     text {
-        font-size: 50px;
+        font-size: 40px;
         text-anchor: middle;
         font-family: "DroidSansMono";
         font-weight: bold;
